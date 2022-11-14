@@ -1,0 +1,21 @@
+header{
+    background-color: #2874f0;
+    height: 62px;
+    width: 100vw;
+    
+    
+}
+.flip{
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.explore{
+    font-size: 16px;
+    font-weight:500px;
+    font-style: italic;
+}
+.plus{
+    color:#ffe500;;
+
+}
