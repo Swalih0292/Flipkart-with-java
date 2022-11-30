@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -12,106 +12,280 @@
   </head>
   <body>
     <!-- main section -->
-    <div class="container-fluid p-0 d-flex flex-column" style="background-color:aliceblue;">
-        <header class="d-flex justify-content-around">
-            <div class=" d-flex flex-row align-items-center justify-content-around" style="width: 80% ;">
-
-                <div class="d-flex flex-column text-light p-0">
-                    
-                      <div>
-                        <span class="flip">
-                            Flipkart
-                    
-                        </span>
-                      </div>
-                        <div class="d-flex flex-row">
-                            <span class="explore">
-                                Explore 
-                            </span>
-                            <span class="explore plus">
-                               &nbsp; Plus+
-                            </span>
-                        </div>
-                </div>
-                <div class="d-flex flex-row">
-              
-                  <input class="search-box " type="search"  placeholder="search for products,brands and more">
-                   <button>
-                    <img src="asset/search.svg">
-                   </button>      
-                </div>
-                <div>
-                  <div class="login-box">
-                    <div class="dropdown">
-                      <button class="dropbtn dropbtn1">Login</button>
-                      <div class="dropdown-content">
-                        <a href="#">Notification Preferences</a>
-                        <a href="#"> 24×7 Customer Care</a>
-                        <a href="#">Advertise</a>
-                        <a href="#">Download App</a>
-                      </div>
-                    </div>
-
-                  </div>
-                    
-                </div>
-                <div>
-                  <span class="seller">Become a seller</span>
-                    
-                </div>
-                <div>
-                  <div class="dropdown">
-                    <button class="dropbtn">More</button>
-                    <div class="dropdown-content">
-                      <a href="#">Notification Preferences</a>
-                      <a href="#"> 24×7 Customer Care</a>
-                      <a href="#">Advertise</a>
-                      <a href="#">Download App</a>
-                    </div>
-                  </div>
-                    
-                </div>
-                <div>
-                  <span class="seller">cart</span>
-                  
-                    
-                </div>
-
+    <div
+      class="container-fluid p-0 d-flex flex-column"
+      style="background-color: aliceblue"
+    >
+      <header class="d-flex justify-content-around">
+        <div
+          class="d-flex flex-row align-items-center justify-content-around"
+          style="width: 80%"
+        >
+          <div class="d-flex flex-column text-light p-0">
+            <div>
+              <span class="flip"> Flipkart </span>
             </div>
-            
-
-        </header>
-        <nav class="d-flex flex-row ">
-          <span>Electronics
-          </span>
-          <span>TVs & Appliances
-          </span>
-          <span>Men
-          </span>
-          <span>Women
-          </span>
-          <span>Baby & Kids
-          </span>
-          <span>Home & Furniture
-          </span>
-          <span>Sports, Books & More
-          </span>
-          <span>Flight</span>
-          <span>Offer Zone</span>
-        </nav>
-        <main>
-
-        </main>
-        <footer>
-
-        </footer>
-
+            <div class="d-flex flex-row">
+              <span class="explore"> Explore </span>
+              <span class="explore plus"> &nbsp; Plus+ </span>
+            </div>
+          </div>
+          <div class="d-flex flex-row">
+            <input
+              class="search-box"
+              type="search"
+              placeholder="search for products,brands and more"
+            />
+            <button>
+              <img src="asset/search.svg" />
+            </button>
+          </div>
+          <div>
+            <div class="login-box">
+              <div class="dropdown">
+                <button class="dropbtn dropbtn1">Login</button>
+                <div class="dropdown-content">
+                  <a href="#">Notification Preferences</a>
+                  <a href="#"> 24×7 Customer Care</a>
+                  <a href="#">Advertise</a>
+                  <a href="#">Download App</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="seller">Become a seller</span>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button class="dropbtn">More</button>
+              <div class="dropdown-content">
+                <a href="#">Notification Preferences</a>
+                <a href="#"> 24×7 Customer Care</a>
+                <a href="#">Advertise</a>
+                <a href="#">Download App</a>
+                <a href="#" id="becomes">Become a seller </a>
+                <a href="#" id="becomes">cart</a>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span class="seller">cart</span>
+          </div>
+        </div>
+      </header>
+      <nav class="d-flex flex-row navbar">
+        <span>Electronics </span>
+        <span>TVs & Appliances </span>
+        <span>Men </span>
+        <span>Women </span>
+        <span>Baby & Kids </span>
+        <span>Home & Furniture </span>
+        <span class="nav-span">Sports, Books & More </span>
+        <span class="nav-span">Flight</span>
+        <span class="nav-span">Offer Zone</span>
+      </nav>
+      <main class="d-flex container-fluid flex-row">
+        <div class="side-nav d-flex flex-column p-3 justify-content-around">
+          <div class="border-bottom fs-2">
+            <span> Filters </span>
+          </div>
+          <div class="d-flex flex-column mt-2 border-bottom">
+            <div class="d-flex flex-column">
+              <span class="fs-6">CATEGORIES</span>
+              <span> vehicles > </span>
+              <div class="dropdown">
+                <button
+                  class="btn p-0 border-0 dropdown-toggle"
+                  type="menu"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Bike & scooters
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">ICE Bikes & scooters</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Electric Bikes & Scooters</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="border-bottom">
+            <label class="container">
+              <input type="checkbox" checked="checked" />
+              <img
+                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png"
+                width="98px"
+              />
+              <!-- <span class="checkmark"></span> -->
+            </label>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button
+                class="btn p-0 border-0 dropdown-toggle"
+                type="menu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                BRAND
+              </button>
+              <ul class="dropdown-menu">
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>Ampere</span>
+                </label>
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>Aster</span>
+                </label>
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>Ather</span>
+                </label>
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>BGauss</span>
+                </label>
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>Blue Marline</span>
+                </label>
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>Bounce Infinity</span>
+                </label>
+              </ul>
+            </div>
+          </div>
+          <div class="border-bottom">
+            <div class="dropdown">
+              <button
+                class="btn p-0 border-0 dropdown-toggle"
+                type="menu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                CUSTOMER RATINGS
+              </button>
+              <ul class="dropdown-menu">
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>4★ & above</span>
+                </label>
+              </ul>
+              <ul class="dropdown-menu">
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>3★ & above</span>
+                </label>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="dropdown">
+              <button
+                class="btn p-0 border-0 dropdown-toggle"
+                type="menu"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                OFFERS
+              </button>
+              <ul class="dropdown-menu">
+                <label class="container">
+                  <input type="checkbox" checked="checked" />
+                  <span>No Cost EMI</span>
+                </label>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contant-box" id="productscondainer"></div>
+      </main>
+      <footer></footer>
     </div>
     <!-- main section -->
+    <link rel="" href="index.js" />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script>
+
+
+      function createproductcard(p){
+      return ' <div class="porduct-box flex-column d-flex align-items-center justify-content-around">\
+            <div>\
+              <img src="'+p.imageUrl+'" width="290px" height="270px" ">\
+            </div>\
+            <div class="d-flex flex-column ">\
+              <div>\
+                <span>\
+                 '+p.description+'\
+                </span>\
+              </div>\
+              <div class="d-flex flex-row">\
+                <div class="rating-box d flex-row">\
+                  <span class="rate-span">3.9</span>\
+                  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg==" width="15px">\
+                </div>\
+                 &nbsp;<span>(72)</span>\
+              </div>\
+              <div>\
+               ' + p.price + '\
+              </div>\
+            </div>\
+          </div>\
+         '
+      }
+      var prodects = [{
+                   description: "OKAYA Faast F2B Booking for EX-showroom",
+                  imageUrl:"https://rukminim1.flixcart.com/image/612/612/xif0q/electric-bike-scooter/q/b/8/-original-imagk232gf9mnqeh.jpeg?q=70",
+                  price: 89999
+              },
+              {
+                 description: "HERO Destini 125 Drum Booking For Ex-Showroom price",
+                  imageUrl:"https://rukminim1.flixcart.com/image/612/612/xif0q/electric-bike-scooter/v/f/k/-original-imagg9x4g5krau8u.jpeg?q=70",
+                  price:84408
+              },
+              {
+                description: " OKAYA Faast F2B Booking for EX-showroom",
+                  imageUrl:"https://rukminim1.flixcart.com/image/612/612/xif0q/electric-bike-scooter/m/q/u/-original-imagkfytwf5wgejq.jpeg?q=70",
+                  price:109000
+              },
+              {
+                 description: "HERO Maestro Edge 125 Drum booking for EX-showroom ",
+                  imageUrl:"https://rukminim1.flixcart.com/image/612/612/xif0q/electric-bike-scooter/n/f/n/-original-imaggcdvwmthtxxx.jpeg?q=70",
+                  price: 90000
+              },
+              {
+                 description: "HERO Pleasure+ XTEC Drum Booking for Ex-showroom Price",
+                  imageUrl:"https://rukminim1.flixcart.com/image/612/612/xif0q/electric-bike-scooter/y/p/p/-original-imaggcdwptdgfm8t.jpeg?q=70",
+                  price: 76000
+              },
+              {
+                description: "HERO Maestro Edge 125 Disc Booking for Ex-showroom Pric",
+                  imageUrl:"https://rukminim1.flixcart.com/image/612/612/xif0q/electric-bike-scooter/u/f/d/-original-imaggcdwk6bdxznw.jpeg?q=70",
+                  price: 87000              },
+              ]
+              var prodcarddivs = "";
+
+
+              for(var i=0; i<prodects.length; i = i+1){
+                var currentprod = prodects[i]
+                var prodcarddiv = createproductcard(currentprod);
+                prodcarddivs = prodcarddivs + prodcarddiv;
+              }
+              document.getElementById("productscondainer").innerHTML = prodcarddivs;
+    </script>
   </body>
 </html>
